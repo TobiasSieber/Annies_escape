@@ -1,0 +1,50 @@
+\doxysection{storage Class Reference}
+\hypertarget{classstorage}{}\label{classstorage}\index{storage@{storage}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classstorage_aefa76e2f3e00ec28881e90ccbf9a0b9a}{Add\+Decision}} (\mbox{\hyperlink{class_decision}{Decision}} d)
+\item 
+\mbox{\hyperlink{class_decision}{Decision}} \mbox{\hyperlink{classstorage_a245f13bb1c2f316a19d1bce59dc720e1}{get\+Decision}} (int decision\+ID)
+\begin{DoxyCompactList}\small\item\em Returns the \doxylink{class_decision}{Decision} made by the player, the decision\+ID is a unique value for a given \doxylink{class_decision}{Decision}. \end{DoxyCompactList}\item 
+\Hypertarget{classstorage_a5e2ad973a10f1e69ba1c61ce94310b00}\label{classstorage_a5e2ad973a10f1e69ba1c61ce94310b00} 
+void {\bfseries logging} ()
+\item 
+void \mbox{\hyperlink{classstorage_aa5304a044849bd3093c19646e8086ff7}{get\+All\+Decision}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classstorage_ae98c655628f1dff26e132039ec3f2b9a}\label{classstorage_ae98c655628f1dff26e132039ec3f2b9a} 
+static \mbox{\hyperlink{classstorage}{storage}} {\bfseries Storage}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Generate a storage instanz via a singleton pattern,we use a singleton pattern since we only allow one object of the class storage to exist at a time. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classstorage_aefa76e2f3e00ec28881e90ccbf9a0b9a}\label{classstorage_aefa76e2f3e00ec28881e90ccbf9a0b9a} 
+\index{storage@{storage}!AddDecision@{AddDecision}}
+\index{AddDecision@{AddDecision}!storage@{storage}}
+\doxysubsubsection{\texorpdfstring{AddDecision()}{AddDecision()}}
+{\footnotesize\ttfamily void storage.\+Add\+Decision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_decision}{Decision}}}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Adds a decision object to the Dictionary\Hypertarget{classstorage_aa5304a044849bd3093c19646e8086ff7}\label{classstorage_aa5304a044849bd3093c19646e8086ff7} 
+\index{storage@{storage}!getAllDecision@{getAllDecision}}
+\index{getAllDecision@{getAllDecision}!storage@{storage}}
+\doxysubsubsection{\texorpdfstring{getAllDecision()}{getAllDecision()}}
+{\footnotesize\ttfamily void storage.\+get\+All\+Decision (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Prints all Decisions which are currently stored to the Console, this is mainly for debugging purposes\Hypertarget{classstorage_a245f13bb1c2f316a19d1bce59dc720e1}\label{classstorage_a245f13bb1c2f316a19d1bce59dc720e1} 
+\index{storage@{storage}!getDecision@{getDecision}}
+\index{getDecision@{getDecision}!storage@{storage}}
+\doxysubsubsection{\texorpdfstring{getDecision()}{getDecision()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_decision}{Decision}} storage.\+get\+Decision (\begin{DoxyParamCaption}\item[{int}]{decision\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the \doxylink{class_decision}{Decision} made by the player, the decision\+ID is a unique value for a given \doxylink{class_decision}{Decision}. 
+
+Retrieves a specific \doxylink{class_decision}{Decision} which is identified by the unique decision\+ID
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Storage.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,17 @@
+{
+  "GetLastDecision": {
+    "DecisionID": 5,
+    "DecisionDescription": "Jetzt noch? Es ist nach 20 Uhr!",
+    "DecisionFollowtext": "Nenn mich doch...Blue. Wie dein Handy.",
+    "DecisiontimeoutVal": 10.0,
+    "DecisiontriggerOut": true,
+    "Decisionrequirment": 0,
+    "Decisionreward": 0,
+    "DecisionCall": 3,
+    "DecisionFamily": 2
+  },
+  "GetCurrentInventory": [
+    "Bag",
+    "Flag_asked_for_worktime"
+  ]
+}

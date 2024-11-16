@@ -1,0 +1,7 @@
+"Hello This is Sascha and.{a} Tobias from... {wa 1} mannheim!"setScene("Back")
+"Hello Woasdasdasdarldasd!"setScene("Yellow")
+
+
+
+
+

@@ -1,0 +1,138 @@
+\doxysection{storage Class Reference}
+\hypertarget{classstorage}{}\label{classstorage}\index{storage@{storage}}
+
+
+Manages decision storage using a singleton pattern, allowing only one instance of storage to exist.  
+
+
+Inheritance diagram for storage\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classstorage}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{classstorage_a7112130adc3f5165c2f526f243f67c11}{Add\+Decision}} (\mbox{\hyperlink{class_decision_1_1_decision}{Decision.\+Decision}} d)
+\begin{DoxyCompactList}\small\item\em Adds a decision object to the dictionary if it doesn\textquotesingle{}t already exist. \end{DoxyCompactList}\item 
+override \mbox{\hyperlink{class_decision_1_1_decision}{Decision.\+Decision}} \mbox{\hyperlink{classstorage_a00516bca5edcaa35c7fc1b6c77ab3dd1}{Get\+Decision}} (uint decision\+ID)
+\begin{DoxyCompactList}\small\item\em Retrieves a specific decision by its unique decision\+ID. \end{DoxyCompactList}\item 
+\Hypertarget{classstorage_aa5304a044849bd3093c19646e8086ff7}\label{classstorage_aa5304a044849bd3093c19646e8086ff7} 
+void {\bfseries get\+All\+Decision} ()
+\begin{DoxyCompactList}\small\item\em Prints all stored decisions to the console for debugging purposes. \end{DoxyCompactList}\item 
+Boolean \mbox{\hyperlink{classstorage_ab26aed43caa97e2002d2c458c39c995d}{contains}} (\mbox{\hyperlink{class_decision_1_1_decision}{Decision.\+Decision}} d)
+\begin{DoxyCompactList}\small\item\em Checks if a specific decision exists in the dictionary. \end{DoxyCompactList}\item 
+override int \mbox{\hyperlink{classstorage_ad4785ea09805ee391ca86ab73147ec14}{Size}} ()
+\begin{DoxyCompactList}\small\item\em Returns the total number of stored decisions. \end{DoxyCompactList}\item 
+\Hypertarget{classstorage_af48d6b9ceb20c535cac0a7e903249380}\label{classstorage_af48d6b9ceb20c535cac0a7e903249380} 
+void {\bfseries Droptable} ()
+\begin{DoxyCompactList}\small\item\em Clears all stored decisions from the dictionary. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_decision_1_1_decision}{Decision.\+Decision}} \mbox{\hyperlink{classstorage_ac5a8388afdfdd2627e4d13e85aa15d94}{return\+Last}} ()
+\begin{DoxyCompactList}\small\item\em Returns the most recently added decision based on the highest decision\+ID. \end{DoxyCompactList}\item 
+\Hypertarget{classstorage_a39277186f50340f74819738b1f87a179}\label{classstorage_a39277186f50340f74819738b1f87a179} 
+void {\bfseries Drop\+Storage} ()
+\begin{DoxyCompactList}\small\item\em Clears all stored decisions, effectively dropping the storage. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classtext__holder}{text\+\_\+holder}}}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Add\+Decision} (\mbox{\hyperlink{class_decision_1_1_decision}{Decision.\+Decision}} d)
+\item 
+\mbox{\hyperlink{class_decision_1_1_decision}{Decision.\+Decision}} {\bfseries Get\+Decision} (uint decision\+ID)
+\item 
+int {\bfseries Size} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classstorage_ae98c655628f1dff26e132039ec3f2b9a}\label{classstorage_ae98c655628f1dff26e132039ec3f2b9a} 
+static \mbox{\hyperlink{classstorage}{storage}} {\bfseries Storage}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Provides access to the singleton instance of the storage class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manages decision storage using a singleton pattern, allowing only one instance of storage to exist. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classstorage_a7112130adc3f5165c2f526f243f67c11}\label{classstorage_a7112130adc3f5165c2f526f243f67c11} 
+\index{storage@{storage}!AddDecision@{AddDecision}}
+\index{AddDecision@{AddDecision}!storage@{storage}}
+\doxysubsubsection{\texorpdfstring{AddDecision()}{AddDecision()}}
+{\footnotesize\ttfamily override void storage.\+Add\+Decision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_decision_1_1_decision}{Decision\+::\+Decision}}}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adds a decision object to the dictionary if it doesn\textquotesingle{}t already exist. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em d} & The \doxylink{namespace_decision}{Decision} object to add. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classstorage_ab26aed43caa97e2002d2c458c39c995d}\label{classstorage_ab26aed43caa97e2002d2c458c39c995d} 
+\index{storage@{storage}!contains@{contains}}
+\index{contains@{contains}!storage@{storage}}
+\doxysubsubsection{\texorpdfstring{contains()}{contains()}}
+{\footnotesize\ttfamily Boolean storage.\+contains (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_decision_1_1_decision}{Decision\+::\+Decision}}}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Checks if a specific decision exists in the dictionary. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em d} & The \doxylink{namespace_decision}{Decision} object to check. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the decision exists, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{classstorage_a00516bca5edcaa35c7fc1b6c77ab3dd1}\label{classstorage_a00516bca5edcaa35c7fc1b6c77ab3dd1} 
+\index{storage@{storage}!GetDecision@{GetDecision}}
+\index{GetDecision@{GetDecision}!storage@{storage}}
+\doxysubsubsection{\texorpdfstring{GetDecision()}{GetDecision()}}
+{\footnotesize\ttfamily override \mbox{\hyperlink{class_decision_1_1_decision}{Decision.\+Decision}} storage.\+Get\+Decision (\begin{DoxyParamCaption}\item[{uint}]{decision\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retrieves a specific decision by its unique decision\+ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em decision\+ID} & The ID of the decision to retrieve. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The \doxylink{namespace_decision}{Decision} object corresponding to the provided decision\+ID. 
+\end{DoxyReturn}
+\Hypertarget{classstorage_ac5a8388afdfdd2627e4d13e85aa15d94}\label{classstorage_ac5a8388afdfdd2627e4d13e85aa15d94} 
+\index{storage@{storage}!returnLast@{returnLast}}
+\index{returnLast@{returnLast}!storage@{storage}}
+\doxysubsubsection{\texorpdfstring{returnLast()}{returnLast()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_decision_1_1_decision}{Decision.\+Decision}} storage.\+return\+Last (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the most recently added decision based on the highest decision\+ID. 
+
+\begin{DoxyReturn}{Returns}
+The last \doxylink{namespace_decision}{Decision} object added to the storage. 
+\end{DoxyReturn}
+\Hypertarget{classstorage_ad4785ea09805ee391ca86ab73147ec14}\label{classstorage_ad4785ea09805ee391ca86ab73147ec14} 
+\index{storage@{storage}!Size@{Size}}
+\index{Size@{Size}!storage@{storage}}
+\doxysubsubsection{\texorpdfstring{Size()}{Size()}}
+{\footnotesize\ttfamily override int storage.\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the total number of stored decisions. 
+
+\begin{DoxyReturn}{Returns}
+The count of decisions in the storage. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Scripts/\+Decision/Storage.\+cs\end{DoxyCompactItemize}

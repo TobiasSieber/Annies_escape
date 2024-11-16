@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - UI
+  - 1
+  - 2
+  - CCTV
+  - display_text
+  - Notepad
+  - A1
+  - A2
+  - A3
+  - A4
+  - HandyUI
+  - Smartphone
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 3527881891
+    locked: 0
+  - name: Items&Maps
+    uniqueID: 1053156357
+    locked: 0
+  - name: Cursor
+    uniqueID: 427215803
+    locked: 0
+  - name: Death
+    uniqueID: 725977113
+    locked: 0

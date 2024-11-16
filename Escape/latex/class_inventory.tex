@@ -1,0 +1,97 @@
+\doxysection{Inventory Class Reference}
+\hypertarget{class_inventory}{}\label{class_inventory}\index{Inventory@{Inventory}}
+
+
+Manages the player\textquotesingle{}s inventory using a singleton pattern.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_inventory_af991fa71fbb8b952a5d778b1bdb98a76}\label{class_inventory_af991fa71fbb8b952a5d778b1bdb98a76} 
+void {\bfseries Show} ()
+\begin{DoxyCompactList}\small\item\em Displays the current items in the inventory to the console. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_inventory_a6a926915a2ba39b8b37a9d47c64b4f55}{Addto\+Inventory}} (All\+Items x)
+\begin{DoxyCompactList}\small\item\em Adds a new item to the inventory using bitwise OR. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_inventory_a6846f7dc76e9a9fd8dac23eaf29613f7}{contains}} (All\+Items item)
+\begin{DoxyCompactList}\small\item\em Checks if a specific item is contained in the inventory using bitwise AND. \end{DoxyCompactList}\item 
+All\+Items \mbox{\hyperlink{class_inventory_a177afac0dfc6aa1dfe1bca02a45897e2}{Get\+Current\+Items}} ()
+\begin{DoxyCompactList}\small\item\em Retrieves the current items in the inventory. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_inventory_a69701f393e280f0262ac4964608bf16a}{Drop\+Inventory}} ()
+\begin{DoxyCompactList}\small\item\em Resets the inventory, keeping only the Bag item. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_inventory_a8d51956ba6315eed2c72528ef9b806b6}\label{class_inventory_a8d51956ba6315eed2c72528ef9b806b6} 
+static \mbox{\hyperlink{class_inventory}{Inventory}} {\bfseries inventory}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Provides access to the singleton instance of the \doxylink{class_inventory}{Inventory} class. \end{DoxyCompactList}\item 
+\Hypertarget{class_inventory_ac97f10ab6a8b5fa0f0da11859578b2f2}\label{class_inventory_ac97f10ab6a8b5fa0f0da11859578b2f2} 
+All\+Items {\bfseries Inventory\+Item}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Public getter for the current inventory items. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manages the player\textquotesingle{}s inventory using a singleton pattern. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_inventory_a6a926915a2ba39b8b37a9d47c64b4f55}\label{class_inventory_a6a926915a2ba39b8b37a9d47c64b4f55} 
+\index{Inventory@{Inventory}!AddtoInventory@{AddtoInventory}}
+\index{AddtoInventory@{AddtoInventory}!Inventory@{Inventory}}
+\doxysubsubsection{\texorpdfstring{AddtoInventory()}{AddtoInventory()}}
+{\footnotesize\ttfamily void Inventory.\+Addto\+Inventory (\begin{DoxyParamCaption}\item[{All\+Items}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adds a new item to the inventory using bitwise OR. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The item to add to the inventory. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_inventory_a6846f7dc76e9a9fd8dac23eaf29613f7}\label{class_inventory_a6846f7dc76e9a9fd8dac23eaf29613f7} 
+\index{Inventory@{Inventory}!contains@{contains}}
+\index{contains@{contains}!Inventory@{Inventory}}
+\doxysubsubsection{\texorpdfstring{contains()}{contains()}}
+{\footnotesize\ttfamily bool Inventory.\+contains (\begin{DoxyParamCaption}\item[{All\+Items}]{item }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Checks if a specific item is contained in the inventory using bitwise AND. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & The item to check for in the inventory. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the item is in the inventory, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{class_inventory_a69701f393e280f0262ac4964608bf16a}\label{class_inventory_a69701f393e280f0262ac4964608bf16a} 
+\index{Inventory@{Inventory}!DropInventory@{DropInventory}}
+\index{DropInventory@{DropInventory}!Inventory@{Inventory}}
+\doxysubsubsection{\texorpdfstring{DropInventory()}{DropInventory()}}
+{\footnotesize\ttfamily void Inventory.\+Drop\+Inventory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Resets the inventory, keeping only the Bag item. 
+
+Since Annie will always have a Bag, this method effectively clears all items except the Bag. \Hypertarget{class_inventory_a177afac0dfc6aa1dfe1bca02a45897e2}\label{class_inventory_a177afac0dfc6aa1dfe1bca02a45897e2} 
+\index{Inventory@{Inventory}!GetCurrentItems@{GetCurrentItems}}
+\index{GetCurrentItems@{GetCurrentItems}!Inventory@{Inventory}}
+\doxysubsubsection{\texorpdfstring{GetCurrentItems()}{GetCurrentItems()}}
+{\footnotesize\ttfamily All\+Items Inventory.\+Get\+Current\+Items (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retrieves the current items in the inventory. 
+
+\begin{DoxyReturn}{Returns}
+The current items in the inventory. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Scripts/Inventory.\+cs\end{DoxyCompactItemize}

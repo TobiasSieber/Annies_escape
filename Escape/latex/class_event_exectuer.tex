@@ -1,0 +1,85 @@
+\doxysection{Event\+Exectuer Class Reference}
+\hypertarget{class_event_exectuer}{}\label{class_event_exectuer}\index{EventExectuer@{EventExectuer}}
+
+
+Manages event-\/based actions and object activations based on event IDs.  
+
+
+Inheritance diagram for Event\+Exectuer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_event_exectuer}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_event_exectuer_ab16095bbe755dd82b08ef9d4d14ab743}{Activate\+Object\+Based\+On\+ID}} (int decision\+ID)
+\begin{DoxyCompactList}\small\item\em Activates specific objects based on the provided decision ID. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_event_exectuer_a0ef68969fec6315e1d168c9b3fdb12e6}{Trigger\+Event}} (\mbox{\hyperlink{class_event_handler}{Event\+Handler}} event\+Handler)
+\begin{DoxyCompactList}\small\item\em Triggers an event based on the specified event handler. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_event_exectuer_a546deacf8b11ea0ee742fc47ecf1a99e}\label{class_event_exectuer_a546deacf8b11ea0ee742fc47ecf1a99e} 
+Text\+Mesh\+Pro\+UGUI {\bfseries notification\+Object}
+\begin{DoxyCompactList}\small\item\em UI object for displaying notifications. \end{DoxyCompactList}\item 
+\Hypertarget{class_event_exectuer_a14c1fa1861762494ab36b01b8ea6965e}\label{class_event_exectuer_a14c1fa1861762494ab36b01b8ea6965e} 
+Game\+Object {\bfseries leftpicture}
+\begin{DoxyCompactList}\small\item\em Game\+Object representing the left side picture display. \end{DoxyCompactList}\item 
+\Hypertarget{class_event_exectuer_a54188b56c8398e1bd69e796b0d0c51a2}\label{class_event_exectuer_a54188b56c8398e1bd69e796b0d0c51a2} 
+Game\+Object {\bfseries death}
+\begin{DoxyCompactList}\small\item\em Game\+Object representing the death state, previously serialized as "{}\+Death"{}. \end{DoxyCompactList}\item 
+\Hypertarget{class_event_exectuer_a7deb70d6dbb1b7c40b03d439d75bb676}\label{class_event_exectuer_a7deb70d6dbb1b7c40b03d439d75bb676} 
+Sprite {\bfseries death\+Image}
+\begin{DoxyCompactList}\small\item\em Sprite to display upon death. \end{DoxyCompactList}\item 
+\Hypertarget{class_event_exectuer_a46f9ed28418787fb8ab1b829154d7102}\label{class_event_exectuer_a46f9ed28418787fb8ab1b829154d7102} 
+List$<$ Game\+Object $>$ {\bfseries objects\+To\+Activate}
+\begin{DoxyCompactList}\small\item\em List of Game\+Objects to activate based on event decisions. \end{DoxyCompactList}\item 
+\Hypertarget{class_event_exectuer_a23ceae623281139498f8652030d7a6e2}\label{class_event_exectuer_a23ceae623281139498f8652030d7a6e2} 
+\mbox{\hyperlink{class_click___decision}{Click\+\_\+\+Decision}} {\bfseries click\+Decision}
+\item 
+\Hypertarget{class_event_exectuer_ad5620859b0f4abce85fe79b902347f0d}\label{class_event_exectuer_ad5620859b0f4abce85fe79b902347f0d} 
+string {\bfseries death\+Scene\+Name} = "{}Death\+Scene01"{}
+\begin{DoxyCompactList}\small\item\em Name of the scene to load when a death event is triggered. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manages event-\/based actions and object activations based on event IDs. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_event_exectuer_ab16095bbe755dd82b08ef9d4d14ab743}\label{class_event_exectuer_ab16095bbe755dd82b08ef9d4d14ab743} 
+\index{EventExectuer@{EventExectuer}!ActivateObjectBasedOnID@{ActivateObjectBasedOnID}}
+\index{ActivateObjectBasedOnID@{ActivateObjectBasedOnID}!EventExectuer@{EventExectuer}}
+\doxysubsubsection{\texorpdfstring{ActivateObjectBasedOnID()}{ActivateObjectBasedOnID()}}
+{\footnotesize\ttfamily void Event\+Exectuer.\+Activate\+Object\+Based\+On\+ID (\begin{DoxyParamCaption}\item[{int}]{decision\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Activates specific objects based on the provided decision ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em decision\+ID} & The ID used to determine which object to activate. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_event_exectuer_a0ef68969fec6315e1d168c9b3fdb12e6}\label{class_event_exectuer_a0ef68969fec6315e1d168c9b3fdb12e6} 
+\index{EventExectuer@{EventExectuer}!TriggerEvent@{TriggerEvent}}
+\index{TriggerEvent@{TriggerEvent}!EventExectuer@{EventExectuer}}
+\doxysubsubsection{\texorpdfstring{TriggerEvent()}{TriggerEvent()}}
+{\footnotesize\ttfamily void Event\+Exectuer.\+Trigger\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_event_handler}{Event\+Handler}}}]{event\+Handler }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Triggers an event based on the specified event handler. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event\+Handler} & The \doxylink{class_event_handler}{Event\+Handler} object used to determine the event type and ID. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Scripts/\+Event\+Handler/Event\+Exectuer.\+cs\end{DoxyCompactItemize}

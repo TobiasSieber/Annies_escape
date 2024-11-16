@@ -1,0 +1,76 @@
+\doxysection{Text\+Architect Class Reference}
+\hypertarget{class_text_architect}{}\label{class_text_architect}\index{TextArchitect@{TextArchitect}}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_text_architect_a016fcd413a978708d3dd929c42272043}\label{class_text_architect_a016fcd413a978708d3dd929c42272043} 
+enum {\bfseries Build\+Method} \{ {\bfseries instant}
+, {\bfseries typewriter}
+, {\bfseries fade}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_text_architect_a6ebb20729565384522608b4a5c61e2f5}\label{class_text_architect_a6ebb20729565384522608b4a5c61e2f5} 
+{\bfseries Text\+Architect} (Text\+Mesh\+Pro\+UGUI tmpro\+\_\+ui)
+\item 
+\Hypertarget{class_text_architect_aba2dd98c5aa230a3fdf29e3bbb42d722}\label{class_text_architect_aba2dd98c5aa230a3fdf29e3bbb42d722} 
+{\bfseries Text\+Architect} (Text\+Mesh\+Pro tmpro\+\_\+world)
+\item 
+\Hypertarget{class_text_architect_a849751c9d165fb86b886099581c8c1ad}\label{class_text_architect_a849751c9d165fb86b886099581c8c1ad} 
+Coroutine {\bfseries Build} (string text)
+\item 
+\Hypertarget{class_text_architect_ac5d062f3501bbc444884ae3c1fcaeae2}\label{class_text_architect_ac5d062f3501bbc444884ae3c1fcaeae2} 
+Coroutine {\bfseries Append} (string text)
+\item 
+\Hypertarget{class_text_architect_ac10826d977bb7f00119692d862f9aa9d}\label{class_text_architect_ac10826d977bb7f00119692d862f9aa9d} 
+void {\bfseries Stop} ()
+\item 
+\Hypertarget{class_text_architect_ab3fafda75aac844edc47c0aac843781d}\label{class_text_architect_ab3fafda75aac844edc47c0aac843781d} 
+void {\bfseries force\+Complete} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_text_architect_a651670134eb61c256515f6b567fedb7d}\label{class_text_architect_a651670134eb61c256515f6b567fedb7d} 
+bool {\bfseries hurry\+Up} =false
+\item 
+\Hypertarget{class_text_architect_a36227d8bca059b212dda21407864b358}\label{class_text_architect_a36227d8bca059b212dda21407864b358} 
+Build\+Method {\bfseries build\+Method} =Build\+Method.\+typewriter
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_text_architect_af29bcb4e4b140ef4a10bf71395a9084a}\label{class_text_architect_af29bcb4e4b140ef4a10bf71395a9084a} 
+TMP\+\_\+\+Text {\bfseries tmpro}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_text_architect_accd8d8033662858aaa47f6761b0a5330}\label{class_text_architect_accd8d8033662858aaa47f6761b0a5330} 
+string {\bfseries current\+Text}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_text_architect_a5b897ed1be142abc8613de2c394514be}\label{class_text_architect_a5b897ed1be142abc8613de2c394514be} 
+string {\bfseries target\+Text} ="{}"{}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_text_architect_ae2554f8dca7c2ea380ef1d4ed2036170}\label{class_text_architect_ae2554f8dca7c2ea380ef1d4ed2036170} 
+string {\bfseries pre\+Text} ="{}"{}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_text_architect_aea817333b4ec3aa87b5af8f8270ba385}\label{class_text_architect_aea817333b4ec3aa87b5af8f8270ba385} 
+string {\bfseries full\+Target\+Text}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_text_architect_ae7b55276a8ab561f499f01bbda8d2cc7}\label{class_text_architect_ae7b55276a8ab561f499f01bbda8d2cc7} 
+Color {\bfseries text\+Color}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\Hypertarget{class_text_architect_a6510e706d6b17f01ecdb43f1cf913077}\label{class_text_architect_a6510e706d6b17f01ecdb43f1cf913077} 
+int {\bfseries characters\+Per\+Cycle}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_text_architect_a31acfbed99fd5f48aae9b0923ec5306d}\label{class_text_architect_a31acfbed99fd5f48aae9b0923ec5306d} 
+float {\bfseries speed}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\Hypertarget{class_text_architect_a05105f6bbcd5ecb3210882fb8434e669}\label{class_text_architect_a05105f6bbcd5ecb3210882fb8434e669} 
+bool {\bfseries is\+Building}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Scripts/\+Text\+\_\+\+Scripts/Text\+Arch.\+cs\end{DoxyCompactItemize}

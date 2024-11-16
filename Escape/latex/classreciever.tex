@@ -1,0 +1,174 @@
+\doxysection{reciever Class Reference}
+\hypertarget{classreciever}{}\label{classreciever}\index{reciever@{reciever}}
+
+
+Holds all possible decisions and events, implemented as a singleton.  
+
+
+Inheritance diagram for reciever\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classreciever}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{classreciever_a6bfb1dc72b7ab2e20b8f6424174763fb}{Add\+Decision}} (\mbox{\hyperlink{class_decision_1_1_decision}{Decision.\+Decision}} d)
+\begin{DoxyCompactList}\small\item\em Adds a decision to all\+Decisions if it doesn’t already exist. \end{DoxyCompactList}\item 
+override \mbox{\hyperlink{class_decision_1_1_decision}{Decision.\+Decision}} \mbox{\hyperlink{classreciever_ac5660abf42e631ecf67997b6ad4ebf94}{Get\+Decision}} (uint decision\+ID)
+\begin{DoxyCompactList}\small\item\em Retrieves a specific decision by its unique decision\+ID. \end{DoxyCompactList}\item 
+override int \mbox{\hyperlink{classreciever_acaba04953496008423b3ac8d6e0e9e92}{Size}} ()
+\begin{DoxyCompactList}\small\item\em Returns the total number of decisions stored. \end{DoxyCompactList}\item 
+\Hypertarget{classreciever_a4a80786f2bb70cef6a5f5c50e974637d}\label{classreciever_a4a80786f2bb70cef6a5f5c50e974637d} 
+void {\bfseries Droptable} ()
+\begin{DoxyCompactList}\small\item\em Clears all stored decisions from the dictionary. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classreciever_a84e835a73c7f5ae7d559417be61620ec}{Add\+Event}} (\mbox{\hyperlink{class_event_handler}{Event\+Handler}} event\+Handler)
+\begin{DoxyCompactList}\small\item\em Adds an event to all\+Events. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classreciever_a40c9d7d2a3c7036ebaea7da27cdd50b6}{Event\+Exists}} (\mbox{\hyperlink{class_decision_1_1_decision}{Decision.\+Decision}} d)
+\begin{DoxyCompactList}\small\item\em Checks if an event exists for a specific decision. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_event_handler}{Event\+Handler}} \mbox{\hyperlink{classreciever_a2aa25acd8f6aa186afb1fad537b007b9}{Get\+Event}} (uint id)
+\begin{DoxyCompactList}\small\item\em Retrieves a specific event by its ID. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classreciever_a60127c45d6f3e5fa4496f77029d26b68}{contains\+Event}} (\mbox{\hyperlink{class_event_handler}{Event\+Handler}} event\+Handler)
+\begin{DoxyCompactList}\small\item\em Checks if a specific event exists in all\+Events. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classtext__holder}{text\+\_\+holder}}}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Add\+Decision} (\mbox{\hyperlink{class_decision_1_1_decision}{Decision.\+Decision}} d)
+\item 
+\mbox{\hyperlink{class_decision_1_1_decision}{Decision.\+Decision}} {\bfseries Get\+Decision} (uint decision\+ID)
+\item 
+int {\bfseries Size} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classreciever_acc8eca64039f5b371bde2887c08a41a3}\label{classreciever_acc8eca64039f5b371bde2887c08a41a3} 
+static \mbox{\hyperlink{classreciever}{reciever}} {\bfseries Reciever}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Provides access to the singleton instance of the reciever class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Holds all possible decisions and events, implemented as a singleton. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classreciever_a6bfb1dc72b7ab2e20b8f6424174763fb}\label{classreciever_a6bfb1dc72b7ab2e20b8f6424174763fb} 
+\index{reciever@{reciever}!AddDecision@{AddDecision}}
+\index{AddDecision@{AddDecision}!reciever@{reciever}}
+\doxysubsubsection{\texorpdfstring{AddDecision()}{AddDecision()}}
+{\footnotesize\ttfamily override void reciever.\+Add\+Decision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_decision_1_1_decision}{Decision\+::\+Decision}}}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adds a decision to all\+Decisions if it doesn’t already exist. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em d} & The \doxylink{namespace_decision}{Decision} object to add. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classreciever_a84e835a73c7f5ae7d559417be61620ec}\label{classreciever_a84e835a73c7f5ae7d559417be61620ec} 
+\index{reciever@{reciever}!AddEvent@{AddEvent}}
+\index{AddEvent@{AddEvent}!reciever@{reciever}}
+\doxysubsubsection{\texorpdfstring{AddEvent()}{AddEvent()}}
+{\footnotesize\ttfamily void reciever.\+Add\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_event_handler}{Event\+Handler}}}]{event\+Handler }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adds an event to all\+Events. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event\+Handler} & The \doxylink{class_event_handler}{Event\+Handler} object to add. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classreciever_a60127c45d6f3e5fa4496f77029d26b68}\label{classreciever_a60127c45d6f3e5fa4496f77029d26b68} 
+\index{reciever@{reciever}!containsEvent@{containsEvent}}
+\index{containsEvent@{containsEvent}!reciever@{reciever}}
+\doxysubsubsection{\texorpdfstring{containsEvent()}{containsEvent()}}
+{\footnotesize\ttfamily bool reciever.\+contains\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_event_handler}{Event\+Handler}}}]{event\+Handler }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Checks if a specific event exists in all\+Events. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event\+Handler} & The \doxylink{class_event_handler}{Event\+Handler} object to check. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the event exists, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{classreciever_a40c9d7d2a3c7036ebaea7da27cdd50b6}\label{classreciever_a40c9d7d2a3c7036ebaea7da27cdd50b6} 
+\index{reciever@{reciever}!EventExists@{EventExists}}
+\index{EventExists@{EventExists}!reciever@{reciever}}
+\doxysubsubsection{\texorpdfstring{EventExists()}{EventExists()}}
+{\footnotesize\ttfamily bool reciever.\+Event\+Exists (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_decision_1_1_decision}{Decision\+::\+Decision}}}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Checks if an event exists for a specific decision. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em d} & The \doxylink{namespace_decision}{Decision} object to check for an associated event. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if an event exists for the decision, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{classreciever_ac5660abf42e631ecf67997b6ad4ebf94}\label{classreciever_ac5660abf42e631ecf67997b6ad4ebf94} 
+\index{reciever@{reciever}!GetDecision@{GetDecision}}
+\index{GetDecision@{GetDecision}!reciever@{reciever}}
+\doxysubsubsection{\texorpdfstring{GetDecision()}{GetDecision()}}
+{\footnotesize\ttfamily override \mbox{\hyperlink{class_decision_1_1_decision}{Decision.\+Decision}} reciever.\+Get\+Decision (\begin{DoxyParamCaption}\item[{uint}]{decision\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retrieves a specific decision by its unique decision\+ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em decision\+ID} & The ID of the decision to retrieve. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The \doxylink{namespace_decision}{Decision} object corresponding to the provided decision\+ID. 
+\end{DoxyReturn}
+\Hypertarget{classreciever_a2aa25acd8f6aa186afb1fad537b007b9}\label{classreciever_a2aa25acd8f6aa186afb1fad537b007b9} 
+\index{reciever@{reciever}!GetEvent@{GetEvent}}
+\index{GetEvent@{GetEvent}!reciever@{reciever}}
+\doxysubsubsection{\texorpdfstring{GetEvent()}{GetEvent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_event_handler}{Event\+Handler}} reciever.\+Get\+Event (\begin{DoxyParamCaption}\item[{uint}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retrieves a specific event by its ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The ID of the event to retrieve. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The \doxylink{class_event_handler}{Event\+Handler} object corresponding to the provided ID or a default \doxylink{class_event_handler}{Event\+Handler} if not found. 
+\end{DoxyReturn}
+\Hypertarget{classreciever_acaba04953496008423b3ac8d6e0e9e92}\label{classreciever_acaba04953496008423b3ac8d6e0e9e92} 
+\index{reciever@{reciever}!Size@{Size}}
+\index{Size@{Size}!reciever@{reciever}}
+\doxysubsubsection{\texorpdfstring{Size()}{Size()}}
+{\footnotesize\ttfamily override int reciever.\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the total number of decisions stored. 
+
+\begin{DoxyReturn}{Returns}
+The count of decisions in all\+Decisions. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Scripts/\+Decision/reciever.\+cs\end{DoxyCompactItemize}

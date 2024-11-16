@@ -1,0 +1,27 @@
+﻿[
+  {"_eventID": 1,"_type": "EmailOpen","_eventstring": "Email"},
+  {"_eventID": 2,"_type": "EmailOpen","_eventstring": "Email"},
+  {"_eventID": 3,"_type": "EmailOpen","_eventstring": "Email"},
+  {"_eventID": 4,"_type": "EmailOpen","_eventstring": "Email"},
+  {"_eventID": 5,"_type": "backgroundpicture","_eventstring": "Key"},
+  {"_eventID": 8,"_type": "notification","_eventstring": "Annie found a dull looking lamp"},
+  {"_eventID": 19,"_type": "backgroundpicture","_eventstring": "Key"},
+  {"_eventID": 45,"_type": "EmailOpen","_eventstring": "Email"},
+  {"_eventID": 46,"_type": "EmailOpen","_eventstring": "Email"},
+  {"_eventID": 47,"_type": "EmailOpen","_eventstring": "Email"},
+  {"_eventID": 52,"_type": "Death","_eventstring": "Death"},
+  {"_eventID": 53,"_type": "backgroundpicture","_eventstring": "Key"},
+  {"_eventID": 54,"_type": "backgroundpicture","_eventstring": "Key"},
+  {"_eventID": 55,"_type": "backgroundpicture","_eventstring": "Key"},
+  {"_eventID": 56,"_type": "backgroundpicture","_eventstring": "Key"},
+  {"_eventID": 61,"_type": "backgroundpicture","_eventstring": "Key"},
+  {"_eventID": 62,"_type": "backgroundpicture","_eventstring": "Key"},
+  {"_eventID": 63,"_type": "backgroundpicture","_eventstring": "Key"},
+  {"_eventID": 69,"_type": "backgroundpicture","_eventstring": "Key"},
+  {"_eventID": 145,"_type": "backgroundpicture","_eventstring": "Key"},
+  {"_eventID": 146,"_type": "backgroundpicture","_eventstring": "Key"},
+  {"_eventID": 147,"_type": "backgroundpicture","_eventstring": "Key"},
+  {"_eventID": 148,"_type": "backgroundpicture","_eventstring": "Key"},
+  {"_eventID": 241,"_type": "backgroundpicture","_eventstring": "Key"}
+
+]
