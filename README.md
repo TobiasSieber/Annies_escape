@@ -40,7 +40,7 @@ To get started with our game, follow these simple steps to install and set up:
    Clone the repository or download it as a ZIP file.
 
    ```bash
-   git clone https://github.com/Flowy1337/Annies-Escape.git
+   git clone git@github.com:TobiasSieber/Annies_escape.git
    
 
 ### Diagrams
